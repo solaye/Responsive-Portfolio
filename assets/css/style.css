@@ -145,33 +145,24 @@ nav a {
 
 }
 
-@media screen and (max-width: 640px) {
 
-  #stet {
 
-    width: 100%;
-  }
-
-  nav a {
-
-    width: 100%;
-    text-align: center;
-  }
-
-  .para {
-
-    width: 100%;
-  }
-
-}
-
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 980px) {
   .container {
-    width: 100%;
+      width: 100%;
+  }
+  .para {
+      width: 70%;
+      margin: 0 auto;
+      margin-left:10px;
   }
 
+}   
+@media only screen and (max-width: 768px) {
+  .container {
+      width: 100%;
+  }
   .para {
-
     padding: 30px;
     margin: 0 0 40px 0;
     width: 95%;
@@ -179,22 +170,25 @@ nav a {
     line-height: 30px;
     margin-left: 20px;
   }
-
 }
-
-
-@media screen and (max-width: 980px) {
-
-  .container {
+@media only screen and (max-width: 640px) {
+  #stet {
 
     width: 100%;
+    display: flex;
+  }
+
+  nav a {
+
+    width: 100%;
+    text-align: center;
+    display: flex;
   }
 
   .para {
 
-    width: 70%;
-    margin: 0 auto;
-    margin-left: 10px;
+    width: 100%;
   }
-}
-
+      
+  }
+  // attempting to have my full name fill out 100% of header w/ nav elements underneath and centered. 
